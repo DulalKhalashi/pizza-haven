@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+}
+.main {
+  width: 100%;
+  background-color: rgb(184, 232, 220);
+}
+.sidebar {
+  background: rgb(3, 102, 91);
+  color: #fff;
+  height: 100vh;
+  width: 200px;
+  transition: all 0.5s;
+}
+.top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+}
+.logo {
+  font-size: 15px;
+  font-family: "Papyrus";
+  white-space: nowrap;
+}
+.bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.link {
+  display: flex;
+  color: #fff;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.link:hover {
+  background: lightskyblue;
+  color: #000;
+  transition: all 0.5s;
+}
+.active {
+  background-color: lightskyblue;
+  color: #000;
+}
+.icon,
+.link_text {
+  font-size: 20px;
+  font-family: "Papyrus";
+  white-space: nowrap;
+}
+.sidebarHead {
+  background-color: rgb(135, 126, 126);
+  height: 60px;
+  display: flex;
+}
+.text {
+  color: white;
+  line-height: 5px;
+  margin-left: 20px;
+}
+
+.adminImg {
+  position: fixed;
+  right: 20px;
+  top: 7px;
+  font-size: 40px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1;
+  }
+  .main {
+    padding-left: 50px;
+  }
+  .sidebarHead {
+    position: fixed;
+    width: 100vw;
+  }
+}

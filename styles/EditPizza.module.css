@@ -1,0 +1,149 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(245, 240, 240, 0.52);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTitle {
+  text-align: center;
+  font-family: "cursive";
+}
+
+.wrapper {
+  width: 45%;
+  background-color: white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input {
+  border: none;
+  font-size: 15px;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.textExtra {
+  background-color: rgb(184, 232, 220);
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSm {
+  width: 25%;
+}
+
+.extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extraItems {
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.extraItem {
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid tomato;
+  background-color: white;
+  color: tomato;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.addButton {
+  width: 25%;
+  border: none;
+  background-color: teal;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px 0;
+  align-self: flex-end;
+}
+
+.headerTitle {
+  text-align: center;
+  font-family: "cursive";
+}
+
+.deleteExtra {
+  position: absolute;
+  color: white;
+  padding: 2px 5px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: -20px;
+  margin-top: -12px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.defaultImg {
+  height: 70px;
+  width: 70px;
+}
+
+.imageDelete {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  background-color: black;
+  color: white;
+  padding: 1px 7px;
+  border-radius: 50%;
+  font-size: 15px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 90%;
+  }
+}
